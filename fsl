@@ -15,7 +15,7 @@ int main() {
         for(j=0;j<s2;j++)
         {   
             if(x[i]==y[j])arr[i+1][j+1]=1;
-            printf(" %d \t", arr[i][j]);
+            printf(" %d \t", arr[i][j]);// diagoanally adjacent ones(1) in the matrix define the result
         }
         printf("\n");
     }
