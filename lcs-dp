@@ -4,7 +4,7 @@
 #include<string.h>
 int main(int argc, char** argv) {
     char x[]="bangladesh";
-    char y[]="galdiator";
+    char y[]="england";
     int s1= sizeof(x) / sizeof(x[0]);
     int s2= sizeof(y) / sizeof(y[0]);
     int i,j,k=0,arr[s1][s2];
