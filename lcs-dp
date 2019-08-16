@@ -1,0 +1,46 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include<string.h>
+int main(int argc, char** argv) {
+    char x[]="bangladesh";
+    char y[]="galdiator";
+    int s1= sizeof(x) / sizeof(x[0]);
+    int s2= sizeof(y) / sizeof(y[0]);
+    int i,j,k=0,arr[s1][s2];
+    char res[20],r[20];
+    for(i=0;i<s1;i++){
+        for(j=0;j<s2;j++)
+                arr[i][j]=0;
+    }
+    printf("\t");
+    for(i=0;i<s2;i++){
+        printf(" %c \t", y[i]);
+    }
+   printf("\n  ");
+    for(i=0;i<s1;i++){
+        if(i>0)printf(" %c", x[i-1]);
+        for(j=0;j<s2;j++)
+        {
+            if(x[i]==y[j])
+            {
+            arr[i+1][j+1]=1;
+            r[k]=y[j];
+            k++;
+            }
+            printf(" %d \t", arr[i][j]);
+        }
+        printf("\n");      
+    }
+   printf("\n");  
+   for(i=0;i<s1;i++){
+        printf(" %c \t", r[i]);//aggtab
+    }
+    
+    return 0;
+}
+
+    
+    
+    
+    
